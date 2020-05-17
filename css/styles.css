@@ -7,6 +7,7 @@
 /* акцент заливки фона rgba(47, 48, 58, 0.8) */
 /* фоновый цвет */
 /* цвет строк адреса */
+
 :root{
   --primary-text-color: #757575;
   --title-text-color:  #212121;
@@ -18,8 +19,15 @@
   --backgraund-second:#F5F4FA;
   
 }
+html{
+    box-sizing: border-box;
+}
+ *,
+ *::before,
+ *::after{
+     box-sizing: inherit;
+ } 
 
-  
 
 body{
 
@@ -32,6 +40,7 @@ body{
 
 
 }
+
 
 .list{
     list-style: none;
@@ -89,6 +98,10 @@ letter-spacing: 0.02em;
 
 /* hero */
 .hero-title{
+    background-color: var(--accent-bg-color);
+}
+
+.hero-title{
     color: var(--background-color);
     
 font-weight: 900;
@@ -102,6 +115,10 @@ letter-spacing: 0.06em;
 
 /* Button*/
 .button{
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    text-decoration: none;
     color: var(--background-color);
     background-color: var(--accent-color);
 
@@ -115,8 +132,18 @@ letter-spacing: 0.06em;
 
 }
 
-
-
+.button-three{
+    display: inline-block;
+    background-color: var(--backgraund-second);
+    border-radius: 4px;
+    width: 278px;
+    height: 120px;
+}
+.list .button-three:hover,
+.list .button-three:focus{
+     color: var(--backgraund-second);
+     background-color: var(--accent-color);
+}
 
 /* section */
 .section-title{
@@ -142,6 +169,8 @@ line-height: 1.14;
 }
 
 
+
+
 /* feature */
 .feature-title{
     color: var(--title-text-color);
@@ -160,6 +189,10 @@ button{
 }
 
 .button.primary{
+    display: inline-block;
+
+    padding: 27px 90px;
+    border-radius: 0px 0px 4px 4px;
     color: var(--background-color);
     background-color: var(--accent-bg-color);
 }
@@ -237,6 +270,9 @@ line-height: 1.4;
 
 }
 .button-second{
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
     color: var(--title-text-color);
     background-color: var(--backgraund-second);
 }
