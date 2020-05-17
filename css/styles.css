@@ -54,6 +54,7 @@ font-size: 26px;
 line-height: 1.2;
 
 
+
 }
 .logo-studio{
     color: var(--title-text-color);
@@ -198,10 +199,11 @@ button{
 }
 
 /* our team */
-
+.team{
+    background-color: var(--backgraund-second);
+}
 .team-title{
-    color: var(--title-text-color);
-    
+    color: var(--title-text-color); 
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
