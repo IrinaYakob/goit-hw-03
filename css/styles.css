@@ -7,7 +7,7 @@
 /* акцент заливки фона rgba(47, 48, 58, 0.8) */
 /* фоновый цвет */
 /* цвет строк адреса */
-
+/* цвет рамки */
 :root{
   --primary-text-color: #757575;
   --title-text-color:  #212121;
@@ -17,7 +17,7 @@
   --background-footer: #2F303A;
   --text-adress-color: rgba(255, 255, 255, 0.6);
   --backgraund-second:#F5F4FA;
-  
+  --color-border: #ECECEC;
 }
 html{
     box-sizing: border-box;
@@ -38,11 +38,27 @@ body{
     font-size: 18px;
     line-height: 1.7;
 
+}
 
+
+/*Page header  */
+.page-header {
+  background-color: var(--background-color);  
+}
+
+.container{
+    background-color: var(--background-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
 }
 
 
 .list{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
     
@@ -95,22 +111,29 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 
 }
-  
+
+
 
 /* hero */
+
+.hero{
+text-align: center;
+}
+
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 46px;
     background-color: var(--accent-bg-color);
 }
 
 .hero-title{
-    color: var(--background-color);
     
+    color: var(--background-color);
+    min-width: 646px;
+      
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
-/* or 136% */
-
-text-align: center;
 letter-spacing: 0.06em;
 }
 
@@ -122,7 +145,8 @@ letter-spacing: 0.06em;
     text-decoration: none;
     color: var(--background-color);
     background-color: var(--accent-color);
-
+    min-width: 200px;
+  
 font-weight: bold;
 font-size: 16px;
 line-height: 1.9;
@@ -135,10 +159,13 @@ letter-spacing: 0.06em;
 
 .button-three{
     display: inline-block;
+   padding-top: 25px;
+   padding-bottom: 25px;
     background-color: var(--backgraund-second);
     border-radius: 4px;
     width: 278px;
     height: 120px;
+    text-align: center;
 }
 .list .button-three:hover,
 .list .button-three:focus{
@@ -147,10 +174,23 @@ letter-spacing: 0.06em;
 }
 
 /* section */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline:  1px solid var(--color-border);
+   
+}
+
+   
+
 .section-title{
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--title-text-color);
+   padding-top: 94px;
+   padding-bottom: 94px;
     
-font-weight: 700;
+font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 
@@ -160,7 +200,8 @@ line-height: 1.14;
 }
 
 .section-list .title{
-
+    margin-top: 15;
+    margin-bottom: 0;
     font-style: 400;
     font-weight: 400;
     font-size: 14px;
@@ -168,7 +209,10 @@ line-height: 1.14;
     
   
 }
-
+.section-list p{
+    margin-top: 10;
+    margin-bottom: 0;
+}
 
 
 
@@ -191,11 +235,13 @@ button{
 
 .button.primary{
     display: inline-block;
-
-    padding: 27px 90px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     border-radius: 0px 0px 4px 4px;
     color: var(--background-color);
     background-color: var(--accent-bg-color);
+    text-align: center;
+    min-width: 370px;
 }
 
 /* our team */
