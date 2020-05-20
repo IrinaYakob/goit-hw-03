@@ -208,8 +208,25 @@ letter-spacing: 0.06em;
 }
 .list{
     display: flex;
-
+    
 }
+
+.list .element{
+   
+    width: 270px;
+    margin-right: 30px;
+    margin-left: 0;
+    
+}
+
+
+.element-text{
+    margin-top: 10px;
+    width: 270px;
+    font-size: 14px;
+    line-height: 1,7px;
+}
+
 
 .list .button-three:hover,
 .list .button-three:focus{
@@ -219,44 +236,28 @@ letter-spacing: 0.06em;
 
 /* section */
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    background-color: rebeccapurple;
+padding: 90px 215px;
+margin: 0;
     outline:  1px solid var(--color-border);
    
 }
 
 .section-title{
-    margin-top: 0;
+    width: 1170;
+    margin-top:0;
     margin-bottom: 0;
-    color: var(--title-text-color);
- 
-    
+    color: var(--title-text-color); 
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 
-
-
-
 }
 
-.section-list .title{
-    margin-top: 15;
-    margin-bottom: 0;
-    font-style: 400;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    
-  
-}
-.section-list p{
-    margin-top: 10;
-    margin-bottom: 0;
-}
 
 .feature.no-padding{
-    padding-top: 0;
+    background-color: red;
+    padding-top: 94px;
     padding-bottom: 94px;
     margin-top: 0;
     margin-bottom: 0;
@@ -265,9 +266,7 @@ line-height: 1.14;
 /* feature */
 .feature-title{
     margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     color: var(--title-text-color);
 
     font-weight: bold;
@@ -276,6 +275,13 @@ line-height: 1.14;
     text-align: center;
     
 }
+.list .item{
+    margin-right: 30px;
+
+    width: calc((100%-(30px*3))/3);
+}
+    
+
 .feature .link{
     color: var(--title-text-color);
 }
@@ -376,14 +382,27 @@ line-height: 1.4;
 /* сервис*/
 
 .filter{
-   
+   display: flex;
+   align-items: center;
+   margin-right: 0;
+   margin-left: 0;
+ 
+
+}
+
+.content-list{
     align-items: center;
 }
-.content .list{ display: flex;
+
+
+.content .list{ 
+    display: flex;
     margin-left: 0;
 }
+
 .content .item+ .item{
     margin-left: 8px;
+
 }
 
 .content-title{
@@ -392,6 +411,7 @@ line-height: 1.4;
 }
 .button-second{
     display: inline-block;
+    min-width: 29px;
     padding: 6px 22px;
     border-radius: 4px;
     color: var(--title-text-color);
