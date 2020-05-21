@@ -176,26 +176,6 @@ line-height: 1.4;
 letter-spacing: 0.06em;
 }
 
-/* Button*/
-.button{
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    min-width: 200px;
-  
-font-weight: bold;
-font-size: 16px;
-line-height: 1.9;
-/* identical to box height, or 187% */
-
-text-align: center;
-letter-spacing: 0.06em;
-
-}
-
 .button-three{
   display: inline-block;
    padding-top: 25px;
@@ -448,15 +428,51 @@ line-height: 1.4;
 .content-title{
     display: none;
 }
+
+/* Button*/
+.button{
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    min-width: 200px;
+  
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+/* identical to box height, or 187% */
+
+text-align: center;
+letter-spacing: 0.06em;
+
+}
+
+
+
+
+
+
 .list-card{
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
     list-style: none;
     
 }
-  
+.list-card .card{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 60px) /3)
+}
+    
+
  .card{ 
+    display: flex;
     width: 370px;
+    justify-content:center;
+    align-items: center;
     margin-right: 30px;
     margin-bottom: 30px;
  }   
@@ -469,35 +485,20 @@ line-height: 1.4;
 }
 
 
-.list .card{
-    display: flex; 
-    width: 370px; 
-    padding: 0;
-    
-}
-.list .card{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 30px;
-
-}
-
 .content .list{ 
     display: flex;
+    justify-content: center;
     margin-left: 0;
 }
 
-.content .item+ .item{
-    margin-left: 8px;
-
-}
-
-.content-title{
+.text-title{
     color: var(--title-text-color);
-
 }
+
+
 .button-second{
     display: inline-block;
+    justify-content: center;
     min-width: 29px;
     padding: 6px 22px;
     border-radius: 4px;
@@ -510,6 +511,12 @@ line-height: 1.4;
     color: var(--background-color);
     background-color: var(--accent-color);
 }
+
+.button-second .item+ .item{
+    margin-left: 8px;
+
+}
+
 
 
 /*  контент*/
@@ -525,8 +532,6 @@ line-height: 1.4;
 
 }
 .content .title{
-
-
 font-size: 16px;
 line-height: 1.9;
 
