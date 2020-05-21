@@ -197,28 +197,32 @@ letter-spacing: 0.06em;
 }
 
 .button-three{
-    display: inline-block;
+  display: inline-block;
    padding-top: 25px;
    padding-bottom: 25px;
     background-color: var(--backgraund-second);
     border-radius: 4px;
-    width: 278px;
+    width: 270px;
     height: 120px;
     text-align: center;
 }
 .list{
     display: flex;
-    
+    justify-content: space-between;
+   
 }
 
 .list .element{
-   
-    width: 270px;
-    margin-right: 30px;
-    margin-left: 0;
+    margin-right: 15px;
+    
     
 }
+.list .element:last-child{
+    margin-right: 0;
+   
+}
 
+    
 
 .element-text{
     margin-top: 10px;
@@ -236,17 +240,20 @@ letter-spacing: 0.06em;
 
 /* section */
 .section{
-    background-color: rebeccapurple;
-padding: 90px 215px;
+background-color: rebeccapurple;
+padding-top: 90px;
+padding-bottom: 90px;
+padding-left: 215px;
+padding-right: 215px;
 margin: 0;
+
     outline:  1px solid var(--color-border);
    
 }
 
 .section-title{
     width: 1170;
-    margin-top:0;
-    margin-bottom: 0;
+   margin: 0;
     color: var(--title-text-color); 
 font-weight: bold;
 font-size: 14px;
@@ -305,29 +312,34 @@ button{
    
 .team{
     background-color: var(--backgraund-second);
-    padding-top: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .team-title{
-    padding-top: 94px;
-    color: var(--title-text-color); 
+padding:0;
+margin-bottom: 30px;
+margin-top: 0;
+color: var(--title-text-color); 
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-
-
 }
 .team-list .title{
-    padding-top: 0;
+padding-top: 0;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 
 }
 
+.list .team{
+    display: flex;
+    width: 270px;
+}
 .section .client{
    padding-top: 0;
    padding-bottom: 94;
