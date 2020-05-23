@@ -45,14 +45,28 @@ body{
 .page-header {
   background-color: var(--background-color);  
 }
-
+.page-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .list{
     padding: 0;
     margin: 0;
     list-style: none;
+    
 }
-    
-    
+.link{
+     text-decoration: none;
+}
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1,19;
+    text-decoration: none;
+}   
+  
 .container{
     background-color: var(--background-color);
     margin-left: auto;
@@ -61,20 +75,11 @@ body{
     padding-right: 15px;
     width: 1170px;
 }
-/* main-nav */
-.main-nav{
-    display: flex;
-    align-items: center;
-}
-
-
-   
+ 
 .logo-web{
-    color: var(--accent-color);
+color: var(--accent-color);
 font-size: 26px;
 line-height: 1.2;
-
-
 
 }
 .logo-studio{
@@ -83,39 +88,21 @@ font-size: 26px;
 line-height: 1.2;
 
 }
-
-/* Site-nav */
-.site-nav{
+.main-nav{
     display: flex;
-    margin-left: 85px;
+    align-items: center;
 }
-
-.site-nav .item{
-  margin-right: 50px;
-}
-
-.site-nav .item+ .item{
-    margin-left: 50px;
-}
-/* 
-.site-nav .item :not(:last-child){
-    margin-right: 0;
-}
-
- */
-
+/* Site-nav */
 .site-nav .link{
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--title-text-color);
-    
+    font-weight: 500;
 font-size: 14px;
-line-height: 1.2;
+line-height: 1,14;
 letter-spacing: 0.02em;
-
+padding-top: 32px;
+padding-bottom: 32px;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var(--accent-color);
@@ -124,23 +111,26 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 
 }
+.site-nav{
+    display: flex;
+    margin-left: 85px;
+}
+.site-nav .nav+ .nav{
+    margin-left: 50px;
+  
+}
+
+/* .site-nav .item :not(:last-child){
+    margin-right: 50px;
+}
+
 
 /* contacts */
-.contacts{
-    display: flex;
-    margin-left: auto;
-
-}
-
-.contacts .item+ .item{
-    margin-left: 50px;
-}
 .contacts .link{
     display: block;
-     color: var(--primary-text-color);
-     padding-top: 32px;
-     padding-bottom: 32px;
-   
+    color: var(--primary-text-color)    
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contacts .link:hover,
 .contacts .link:focus{
@@ -151,7 +141,11 @@ letter-spacing: 0.02em;
 
 }
 
-
+.contacts .auth-nav+.auth-nav{
+    margin-left: 50px;
+    
+}
+ 
 
 /* hero */
 
@@ -176,21 +170,23 @@ line-height: 1.4;
 letter-spacing: 0.06em;
 }
 
-.button-three{
-  display: inline-block;
-   padding-top: 25px;
-   padding-bottom: 25px;
-    background-color: var(--backgraund-second);
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    text-align: center;
-}
+
 .list{
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between; 
 }
+.hero-title .button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+}
+
+
+
+
+/* section  преимущества*/
 
 .list .element{
     width:  calc((100% - 90px) /4);
@@ -211,6 +207,16 @@ letter-spacing: 0.06em;
     line-height: 1,7px;
 }
 
+.button-three{
+    display: inline-block;
+     padding-top: 25px;
+     padding-bottom: 25px;
+      background-color: var(--backgraund-second);
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+      text-align: center;
+  }
 
 .list .button-three:hover,
 .list .button-three:focus{
@@ -218,27 +224,29 @@ letter-spacing: 0.06em;
      background-color: var(--accent-color);
 }
 
-/* section */
+
 .section{
 background-color: rebeccapurple;
 padding-top: 90px;
 padding-bottom: 90px;
 margin: 0;
 
-    outline:  1px solid var(--color-border);
+outline:  1px solid var(--color-border);
    
 }
 
 .section-title{
-   width: 1170;
-   margin: 0;
-   color: var(--title-text-color); 
+color: var(--title-text-color); 
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
+margin-top: 30px;
+margin-bottom: 0;
 
 }
-
+.heading-title{
+    display: none;
+}
 
 .feature.no-padding{
     background-color: red;
@@ -260,6 +268,8 @@ line-height: 1.14;
     text-align: center;
     
 }
+
+
 .list .item{
     margin-right: 30px;
 
@@ -282,7 +292,9 @@ line-height: 1.14;
 button{
     font-family: inherit;
 }
-
+.primary{
+    text-decoration: none;
+}
 .button.primary{
     display: inline-block;
     padding-top: 27px;
