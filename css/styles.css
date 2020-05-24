@@ -242,7 +242,7 @@ letter-spacing: 0.06em;
 
 
 .section{
-background-color: rebeccapurple;
+
 padding-top: 90px;
 padding-bottom: 90px;
 margin: 0;
@@ -267,7 +267,6 @@ margin-bottom: 0;
 
 /* чем мы занимаемся */
 .feature.no-padding{
-    background-color: red;
     padding-top: 94px;
     padding-bottom: 94px;
     margin-top: 0;
@@ -593,6 +592,7 @@ line-height: 1,7;
 .content-title{
     display: none;
 }
+
 
 
 .list-card{
