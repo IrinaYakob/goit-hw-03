@@ -129,9 +129,13 @@ letter-spacing: 0.02em;
 .contacts .link{
     display: block;
     color: var(--primary-text-color)    
+   
+} 
+.contacts .auth-nav{
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
 .contacts .link:hover,
 .contacts .link:focus{
     color: var(--accent-color);
@@ -162,12 +166,12 @@ text-align: center;
 .hero-title{
     
     color: var(--background-color);
-    min-width: 646px;
-      
+    min-width: 646px;      
 font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 letter-spacing: 0.06em;
+margin-bottom: 46px;
 }
 
 
@@ -182,7 +186,21 @@ letter-spacing: 0.06em;
     letter-spacing: 0.06em;
     
 }
-
+.button-hero{
+display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    min-width: 200px;
+  
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+text-align: center;
+letter-spacing: 0.06em;
+}
 
 
 
@@ -197,9 +215,7 @@ letter-spacing: 0.06em;
 .list .element:last-child{
     margin-right: 0;
 }
-
-    
-
+ 
 .element-text{
     margin-top: 10px;
     width: 270px;
@@ -248,6 +264,8 @@ margin-bottom: 0;
     display: none;
 }
 
+
+/* чем мы занимаемся */
 .feature.no-padding{
     background-color: red;
     padding-top: 94px;
@@ -255,8 +273,6 @@ margin-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
-
-/* feature */
 .feature-title{
     margin-top: 0;
     margin-bottom: 50px;
@@ -307,7 +323,8 @@ button{
     min-width: 370px;
 }
 
-/* our team */
+/* Наша команда */
+
 .team{
     background-color: var(--backgraund-second);
     padding-top: 94px;
@@ -347,7 +364,6 @@ button{
 
 } 
 
-
 .list-team{
     display: block;
     width: 270px;
@@ -386,13 +402,10 @@ button{
     justify-content: center;
 }
 
-
-
 .list .team{
     display: flex;
     width: 20px;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .container-link{
@@ -400,7 +413,8 @@ button{
     align-content: center;
     margin-bottom: 24px;
 }
-/* наши клиенты */
+/* Наши клиенты */
+
 .client{
    padding-top: 94px;
    padding-bottom: 94px;
@@ -416,7 +430,6 @@ button{
     text-align: center;
 
 }
-
 
 .list .brand{
     display: flex;
@@ -449,7 +462,26 @@ button{
 footer{
   background-color:  var(--background-footer);
 }
+.container-footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+    padding-top: 48px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: var(--background-footer);
+}
 
+.footer .title{
+    color: var(--background-color);
+     font-weight: bold;
+font-size: 14px;
+line-height: 1,14;
+text-transform: uppercase;
+}
 
 .footer .logo-studio{
     color: var(--background-color);
@@ -461,8 +493,6 @@ line-height: 1.2;
 
 .adress{
  color: var(--background-color);
-
-
 font-size: 14px;
 line-height: 1.7;
 
@@ -474,16 +504,84 @@ line-height: 1.7;
 }
 .adress .contacts{
     color: var(--text-adress-color);
-    
-
 font-size: 14px;
 line-height: 1.4;
 
 }
+
+.button-footer{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    min-width: 200px;
+}
+
+.footer-main {
+    display: flex;
+    padding: 0;
+    margin: 0;   
+}
+.adress-call{
+    display: block;
+    margin-bottom: 28px;
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1,7;
+
+}
+.call{
+    display: block;
+    padding: 0;
+    margin-top: 10px;
+  list-style: none;
+}
+
+.social-adress{
+    display: flex;
+    padding-left: 171px;
+    padding-right: 155px;
+}
+.social-work{
+    display: flex;  
+    margin: 0;
+
+}
+.call-list .link{
+    display: block;
+    color: var(--primary-text-color);   
+  
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+  
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .authors {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+  
+    color: var(--authors-string-color);
+  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+  
+    text-align: center;
+  }
 /* сервис*/
-
- 
-
 
 .container-portfolio{
     width: 1170px;
@@ -495,11 +593,6 @@ line-height: 1.4;
 .content-title{
     display: none;
 }
-
-
-
-
-
 
 
 .list-card{
