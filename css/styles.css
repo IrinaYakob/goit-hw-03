@@ -673,7 +673,7 @@ text-decoration: none;
     margin: 0;
     padding: 0;
     list-style: none;
-   
+   text-decoration: none;
 }
 .list-card .card{
     margin-right: 30px;
@@ -683,6 +683,7 @@ text-decoration: none;
 .img-foto{
     display: block;
     max-width: 100%;
+    height: auto;
 }
  .container-card{
     width: 1170px;
@@ -694,7 +695,10 @@ text-decoration: none;
     margin-left: auto;
   
  }   
-
+.text-title .content-title{
+    display: block;
+    margin: 0;
+}
  .card{ 
     display: flex;
     width: 370px; 
