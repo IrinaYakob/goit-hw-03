@@ -98,7 +98,7 @@ line-height: 1.2;
     color: var(--title-text-color);
     font-weight: 500;
 font-size: 14px;
-line-height: 1,14;
+line-height: 1,2;
 letter-spacing: 0.02em;
 padding-top: 32px;
 padding-bottom: 32px;
@@ -765,6 +765,9 @@ text-decoration: none;
     
     letter-spacing: 0.06em;
 
+}
+.card-link{
+    text-decoration: none;
 }
 .content .title{
 font-size: 16px;
