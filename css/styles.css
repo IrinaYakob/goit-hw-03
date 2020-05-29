@@ -98,7 +98,7 @@ line-height: 1.2;
     color: var(--title-text-color);
     font-weight: 500;
 font-size: 14px;
-line-height: 1,2;
+line-height: 1,14;
 letter-spacing: 0.02em;
 padding-top: 32px;
 padding-bottom: 32px;
@@ -106,10 +106,6 @@ padding-bottom: 32px;
 .site-nav .link:hover,
 .site-nav .link:focus{
     color: var(--accent-color);
-font-size: 14px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-
 }
 .site-nav{
     display: flex;
@@ -139,10 +135,6 @@ letter-spacing: 0.02em;
 .contacts .link:hover,
 .contacts .link:focus{
     color: var(--accent-color);
-font-size: 14px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-
 }
 
 .contacts .auth-nav+.auth-nav{
@@ -578,9 +570,9 @@ line-height: 1,7;
 font-size: 14px;
 line-height:1.14;
 text-transform: uppercase;
-
-
 }
+
+
 .social-adress{
     display: block;
     margin-left: 69px;
@@ -686,7 +678,7 @@ text-decoration: none;
     height: auto;
 }
  .container-card{
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 0;
@@ -695,10 +687,7 @@ text-decoration: none;
     margin-left: auto;
   
  }   
-.text-title .content-title{
-    display: block;
-    margin: 0;
-}
+
  .card{ 
     display: flex;
     width: 370px; 
@@ -729,11 +718,19 @@ text-decoration: none;
     display: inline-block;
     justify-content: center;
     min-width: 29px;
+    height: 38px;
     padding: 6px 22px;
     border-radius: 4px;
     color: var(--title-text-color);
     background-color: var(--backgraund-second);
+    border: var(--primary-text-color);
+    text-align: center;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
 }
+
+
 
 .content-list .button-second:hover,
 .content-list .button-second:focus{
@@ -791,13 +788,15 @@ letter-spacing: 0.06em;
 
 }
 .content-text{
-display: flex;
+display: block;
 margin-top: 4px;
 margin-bottom: 20px;
 padding-left: 24px;
 padding-right: 24px;
-font-size: 18px;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
 line-height: 1,87;
-
+/* identical to box height, or 187% */
 
 }
