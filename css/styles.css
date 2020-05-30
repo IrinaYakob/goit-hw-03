@@ -73,7 +73,7 @@ body{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
+    width: 1200px;
 }
  
 .logo-web{
@@ -465,7 +465,7 @@ footer{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
+    width: 1200px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -643,7 +643,7 @@ text-decoration: none;
 }
 
 .container-portfolio{
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
